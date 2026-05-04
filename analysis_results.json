@@ -1,0 +1,280 @@
+{
+  "correlation_analysis": {
+    "correlations": {
+      "sleep_hours": {
+        "pearson_correlation": -0.1906,
+        "pearson_pvalue": 0.0,
+        "spearman_correlation": -0.191,
+        "spearman_pvalue": 0.0,
+        "strength": "Weak"
+      },
+      "daily_social_media_hours": {
+        "pearson_correlation": 0.1752,
+        "pearson_pvalue": 0.0,
+        "spearman_correlation": 0.1752,
+        "spearman_pvalue": 0.0,
+        "strength": "Weak"
+      },
+      "stress_level": {
+        "pearson_correlation": 0.1705,
+        "pearson_pvalue": 0.0,
+        "spearman_correlation": 0.1694,
+        "spearman_pvalue": 0.0,
+        "strength": "Weak"
+      },
+      "anxiety_level": {
+        "pearson_correlation": 0.1696,
+        "pearson_pvalue": 0.0,
+        "spearman_correlation": 0.1698,
+        "spearman_pvalue": 0.0,
+        "strength": "Weak"
+      },
+      "physical_activity": {
+        "pearson_correlation": -0.0176,
+        "pearson_pvalue": 0.5425,
+        "spearman_correlation": -0.0177,
+        "spearman_pvalue": 0.5392,
+        "strength": "Very Weak"
+      },
+      "screen_time_before_sleep": {
+        "pearson_correlation": -0.0165,
+        "pearson_pvalue": 0.5679,
+        "spearman_correlation": -0.0164,
+        "spearman_pvalue": 0.5707,
+        "strength": "Very Weak"
+      },
+      "addiction_level": {
+        "pearson_correlation": -0.014,
+        "pearson_pvalue": 0.6292,
+        "spearman_correlation": -0.014,
+        "spearman_pvalue": 0.6275,
+        "strength": "Very Weak"
+      },
+      "age": {
+        "pearson_correlation": 0.011,
+        "pearson_pvalue": 0.7042,
+        "spearman_correlation": 0.011,
+        "spearman_pvalue": 0.7044,
+        "strength": "Very Weak"
+      },
+      "academic_performance": {
+        "pearson_correlation": 0.0014,
+        "pearson_pvalue": 0.9602,
+        "spearman_correlation": 0.0013,
+        "spearman_pvalue": 0.9627,
+        "strength": "Very Weak"
+      }
+    },
+    "strongest_predictors": [
+      "sleep_hours",
+      "daily_social_media_hours",
+      "stress_level",
+      "anxiety_level",
+      "physical_activity"
+    ]
+  },
+  "risk_factors": {
+    "feature_importance": [
+      {
+        "feature": "sleep_hours",
+        "importance": 0.20658602401926948
+      },
+      {
+        "feature": "daily_social_media_hours",
+        "importance": 0.18944558802604225
+      },
+      {
+        "feature": "stress_level",
+        "importance": 0.18242075569657182
+      },
+      {
+        "feature": "anxiety_level",
+        "importance": 0.17911042271476424
+      },
+      {
+        "feature": "screen_time_before_sleep",
+        "importance": 0.05980490617987103
+      },
+      {
+        "feature": "academic_performance",
+        "importance": 0.05882394449923162
+      },
+      {
+        "feature": "addiction_level",
+        "importance": 0.04939760568911508
+      },
+      {
+        "feature": "physical_activity",
+        "importance": 0.04325343323699625
+      },
+      {
+        "feature": "age",
+        "importance": 0.031157319938138268
+      }
+    ],
+    "top_risk_factors": [
+      "sleep_hours",
+      "daily_social_media_hours",
+      "stress_level",
+      "anxiety_level",
+      "screen_time_before_sleep"
+    ],
+    "model_accuracy": 1.0
+  },
+  "clustering_patterns": {
+    "number_of_clusters": 4,
+    "cluster_profiles": {
+      "cluster_0": {
+        "size": 302,
+        "depression_rate": 0.0,
+        "avg_stress": 4.27,
+        "avg_anxiety": 4.53,
+        "avg_social_media_hours": 3.5,
+        "avg_sleep_hours": 7.73,
+        "avg_physical_activity": 0.85
+      },
+      "cluster_1": {
+        "size": 285,
+        "depression_rate": 0.0456,
+        "avg_stress": 5.15,
+        "avg_anxiety": 6.59,
+        "avg_social_media_hours": 3.99,
+        "avg_sleep_hours": 5.22,
+        "avg_physical_activity": 0.89
+      },
+      "cluster_2": {
+        "size": 304,
+        "depression_rate": 0.0132,
+        "avg_stress": 6.28,
+        "avg_anxiety": 6.63,
+        "avg_social_media_hours": 5.69,
+        "avg_sleep_hours": 7.35,
+        "avg_physical_activity": 1.26
+      },
+      "cluster_3": {
+        "size": 309,
+        "depression_rate": 0.0453,
+        "avg_stress": 6.04,
+        "avg_anxiety": 4.86,
+        "avg_social_media_hours": 4.92,
+        "avg_sleep_hours": 5.45,
+        "avg_physical_activity": 1.05
+      }
+    }
+  },
+  "behavioral_archetypes": {
+    "high_sm_high_stress": {
+      "count": 80,
+      "depression_rate": 0.125,
+      "avg_anxiety": 5.69,
+      "avg_addiction": 4.88,
+      "description": "High social media usage with elevated stress levels"
+    },
+    "sleep_deprived": {
+      "count": 294,
+      "depression_rate": 0.0748,
+      "avg_stress": 5.36,
+      "avg_anxiety": 5.74,
+      "avg_screen_before_sleep": 1.76,
+      "description": "Insufficient sleep patterns"
+    },
+    "socially_isolated": {
+      "count": 415,
+      "depression_rate": 0.0217,
+      "avg_stress": 5.35,
+      "avg_anxiety": 5.53,
+      "avg_physical_activity": 1.0,
+      "description": "Low social interaction levels"
+    },
+    "low_activity": {
+      "count": 269,
+      "depression_rate": 0.0297,
+      "avg_stress": 5.28,
+      "avg_social_media_hours": 4.45,
+      "description": "Minimal physical activity"
+    }
+  },
+  "anomalies": {
+    "statistical_outliers": {
+      "count": 31,
+      "percentage": 2.58,
+      "depression_rate_in_outliers": 1.0
+    },
+    "contradictory_patterns": {
+      "high_stress_good_grades": 81,
+      "depression_rate": 0.0864
+    }
+  },
+  "depression_risk_profiles": {
+    "depression_rate": 0.0258,
+    "risk_profiles": {
+      "age": {
+        "depressed_avg": 16.06,
+        "non_depressed_avg": 15.92,
+        "difference": 0.14,
+        "depressed_std": 2.06,
+        "non_depressed_std": 2.02
+      },
+      "daily_social_media_hours": {
+        "depressed_avg": 6.72,
+        "non_depressed_avg": 4.48,
+        "difference": 2.24,
+        "depressed_std": 1.01,
+        "non_depressed_std": 2.02
+      },
+      "sleep_hours": {
+        "depressed_avg": 4.76,
+        "non_depressed_avg": 6.49,
+        "difference": -1.73,
+        "depressed_std": 0.57,
+        "non_depressed_std": 1.43
+      },
+      "screen_time_before_sleep": {
+        "depressed_avg": 1.67,
+        "non_depressed_avg": 1.74,
+        "difference": -0.07,
+        "depressed_std": 0.77,
+        "non_depressed_std": 0.72
+      },
+      "academic_performance": {
+        "depressed_avg": 3.0,
+        "non_depressed_avg": 2.99,
+        "difference": 0.01,
+        "depressed_std": 0.56,
+        "non_depressed_std": 0.58
+      },
+      "physical_activity": {
+        "depressed_avg": 0.95,
+        "non_depressed_avg": 1.02,
+        "difference": -0.06,
+        "depressed_std": 0.57,
+        "non_depressed_std": 0.58
+      },
+      "stress_level": {
+        "depressed_avg": 8.48,
+        "non_depressed_avg": 5.37,
+        "difference": 3.12,
+        "depressed_std": 1.21,
+        "non_depressed_std": 2.89
+      },
+      "anxiety_level": {
+        "depressed_avg": 8.61,
+        "non_depressed_avg": 5.56,
+        "difference": 3.06,
+        "depressed_std": 1.05,
+        "non_depressed_std": 2.85
+      },
+      "addiction_level": {
+        "depressed_avg": 5.32,
+        "non_depressed_avg": 5.57,
+        "difference": -0.25,
+        "depressed_std": 3.03,
+        "non_depressed_std": 2.83
+      }
+    },
+    "sample_size": {
+      "depressed": 31,
+      "non_depressed": 1169
+    }
+  }
+}
